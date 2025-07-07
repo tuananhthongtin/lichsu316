@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.header-container {
+  background-color: var(--primary-red);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 60px;
+  width: 100%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Thêm bóng chữ: lệch 2px ngang, 2px dọc, mờ 4px, màu đen với độ trong suốt 0.7 */
+}
+
+.logo {
+  width: 70px;
+  height: auto;
+  margin-right: 15px;
+}
+.logo2 {
+  width: 50px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.main-title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.title-left {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.title-right {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 100px;
+  left: 130px;
+  width: 90%;
+  height: 90%;
+  background-image: url("/img/logo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  opacity: 0.2;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+h1 {
+  text-align: center;
+  color: var(--color-red--);
+  font-size: 1.5rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 70px;
+  background: white;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(245, 9, 9, 0.1);
+}
+.button-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.pdf-button {
+  background-color: #970808;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+.pdf-button:hover {
+  background-color: #003366;
+}

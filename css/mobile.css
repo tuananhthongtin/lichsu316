@@ -1,0 +1,42 @@
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .logo {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .main-title {
+    flex-direction: column;
+  }
+
+  .title-left,
+  .title-right {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .title-right {
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+body {
+  padding: 10px; /* Giảm padding để tiết kiệm không gian */
+}
+/* Tối ưu container chính */
+.container {
+  padding: 10px; /* Giảm padding */
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(245, 9, 9, 0.1);
+}
